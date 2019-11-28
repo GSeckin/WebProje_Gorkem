@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Görkem Blog</title>
+    </head>
+    <body>
+        
+        <div>
+            <h1><a href="/">Görkem Blog</a></h1>
+        </div>
+        {% for gonderi in Gonderis %}
+        <div>
+            <p>{{ gonderi.yayim_zaman }}</p>
+            <h2><a href="">{{ gonderi.baslik }}</a></h2>
+            <p>{{ gonderi.yazi }}</p>
+        </div>
+        {% endfor %}
+
+    </body>
+</html>
